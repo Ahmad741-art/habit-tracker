@@ -1,0 +1,14 @@
+class Habit:
+    def __init__(self, name, description, target_frequency):
+        self.name = name
+        self.description = description
+        self.target_frequency = target_frequency
+        self.logs = {}
+
+    def log_habit(self, date, completed=True):
+        self.logs[date] = completed
+
+    def streak(self):
+        streak_count = 0
+        # Logic to calculate the streak
+        return streak_count
